@@ -1,0 +1,144 @@
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.clearfix:after,.clearfix:before{
+    clear: both;
+    content: '';
+    display: block;
+}
+
+body{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #f4f7fc;
+}
+input{
+    padding: 0;
+    border: none;
+}
+input:focus{
+    outline: none;
+    border: none;
+}
+.header{
+   background-color: #fff;
+}
+.header form {
+    width: 100%;
+     padding: 15px 10px 13px;
+}
+.header form input{
+    width: 80%;
+    background: #f0f3f8;
+    height: 25px;
+    border-radius: 6px;
+    text-indent: 24px;
+    float: left;
+}
+.header form .message{
+    width: 22px;
+    height: 17.5px;
+    background: url(../img/icon.png) no-repeat -85px -5px;
+      background-size: 513%;
+    float: left;
+    transform: scale(1.5);
+    margin-left: 25px;
+    margin-top: 5px;
+    position: relative;
+}
+.header form .message.active:after{
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: red;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 5px;
+}
+
+.header .main-nav li{
+    float: left;
+    width: 20%;
+    border-bottom: 2px solid transparent;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.header .main-nav li a{
+    font-size: 14px;
+}
+.header .main-nav li.active{
+    
+    border-bottom-color: #5eb6ff;
+}
+.header .main-nav li.active a{
+    color: #5eb6ff;
+}
+
+
+.footer-nav{
+    position: fixed;
+    bottom: 0;
+    border-top: 1px solid #cbced3;
+    width: 100%;
+    padding: 6px 0;
+    background-color: #fff;
+}
+.footer-nav li{
+    float: left;
+    width: 33.3333333333333333333%;
+    text-align: center;
+}
+.footer-nav li a{
+
+}
+.footer-nav li a i{
+    display: inline-block;
+    background-image: url(../img/icon.png);
+    background-repeat: no-repeat;
+    background-size: 513%;
+    width: 25px;
+    height: 25px;
+}
+.footer-nav li:nth-of-type(1) i{
+    
+    background-position: -6px -4.5px;
+}
+.footer-nav li:nth-of-type(2) i{
+ 
+     background-position: -33px -4.5px;
+}
+.footer-nav li:nth-of-type(3) i{
+     background-position: -65px -2.5px;
+}
+.footer-nav li.active i{
+    background-position-y: -29px;
+}
+.footer-nav li.active p{
+    color: #5eb6ff;
+}
+
+
+.controls{
+    position: absolute;
+    bottom: 2.5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+ .controls li{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #e0e1e4;
+}
+.controls li.active{
+    width: 12px;
+    background-color: #67aff7;
+    border-radius: 5px;
+}
